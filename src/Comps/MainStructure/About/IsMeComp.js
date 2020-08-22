@@ -3,8 +3,14 @@ import MyImage from './MyImage';
 import AboutMe from './AboutmMe';
 
 class IsMeComp extends Component{
-    <MyImage imageSrc={imageSrc}/>
-    <AboutMe title={title} card={card} email={email}/>
+    <div className="aboutMe">
+        <MyImage imageSrc={imageSrc}/>
+        <AboutMe title={title} card={card} email={email}/>
+    </div>
+    <div classNAme="aboutProject">
+        <ProjectList/>
+    </div>
+    
 }
 IsMeComp.defaultProps={
     imageSrc="D:\Studying\blog\public\gitprof.png",
